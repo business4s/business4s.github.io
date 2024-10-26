@@ -53,7 +53,7 @@ const config: Config = {
                     position: 'right',
                 },
                 {
-                    href: 'https://github.com/business4s/decisions4s',
+                    href: 'https://github.com/business4s',
                     label: 'GitHub',
                     position: 'right',
                 },
