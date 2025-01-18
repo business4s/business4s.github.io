@@ -30,7 +30,13 @@ const config: Config = {
         [
             'classic',
             {
-                docs: false,
+                docs:
+                    {
+                        path: 'mentorship',
+                        routeBasePath: 'mentorship',
+                        sidebarPath: './sidebars.ts',
+                        editUrl: 'https://github.com/business4s/workflows4s/webstie',
+                    },
                 theme: {
                     customCss: './src/css/custom.css',
                 },
@@ -47,6 +53,12 @@ const config: Config = {
                 src: 'img/Business4s.drawio.png',
             },
             items: [
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'mentorshipSidebar',
+                    position: 'left',
+                    label: 'Mentorship Program',
+                },
                 {
                     href: 'https://medium.com/business4s-blog',
                     label: 'Blog',
@@ -68,17 +80,17 @@ const config: Config = {
             style: 'dark',
             links: [
                 {
-                  title: 'Community',
-                  items: [
-                    {
-                      label: 'Discord',
-                      href: 'https://bit.ly/business4s-discord',
-                    },
-                    {
-                      label: 'Twitter',
-                      href: 'https://twitter.com/business4scala',
-                    },
-                  ],
+                    title: 'Community',
+                    items: [
+                        {
+                            label: 'Discord',
+                            href: 'https://bit.ly/business4s-discord',
+                        },
+                        {
+                            label: 'Twitter',
+                            href: 'https://twitter.com/business4scala',
+                        },
+                    ],
                 },
             ],
             // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,

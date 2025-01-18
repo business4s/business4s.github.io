@@ -21,6 +21,16 @@ const FeatureList: FeatureItem[] = [
         link: 'https://business4s.github.io/decisions4s/'
     },
     {
+        title: 'Workflows4s',
+        Svg: require('@site/static/img/workflows4s-logo.drawio.svg').default,
+        description: (
+            <>
+                Prototype of a library for building long-running stateful workflows.
+            </>
+        ),
+        link: 'https://business4s.github.io/workflows4s/'
+    },
+    {
         title: 'Domain-Oriented Scala Style Guide',
         Svg: require('@site/static/img/domain-scala-guide.drawio.svg').default,
         description: (
@@ -32,20 +42,20 @@ const FeatureList: FeatureItem[] = [
         link: 'https://github.com/business4s/domain-oriented-scala-style-guide'
     },
     {
-        title: 'Workflows4s',
-        Svg: require('@site/static/img/workflows4s-logo.drawio.svg').default,
+        title: 'Mentorship Program',
+        Svg: require('@site/static/img/business4s-mentorship.drawio.svg').default,
         description: (
             <>
-                Prototype of a library for building long-running stateful workflows.
+                Helping people achieve their goals around Scala.
             </>
         ),
-        link: 'https://business4s.github.io/workflows4s/'
+        link: 'https://business4s.org/mentorship'
     },
 ];
 
 function Feature({title, Svg, description, link}: FeatureItem) {
     return (
-        <div className={clsx('col col--4')}>
+        <div className={clsx('col col--6')}>
             <a href={link} target="_blank" rel="noopener noreferrer" className="feature-link">
                 <div className="text--center padding-horiz--md">
                     {Svg && <div className="text--center">
