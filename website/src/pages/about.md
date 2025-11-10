@@ -1,6 +1,6 @@
 ---
 title: About Us
-description: Learn more about our project
+description: Learn more about what we do and why
 ---
 
 # About Business4s
