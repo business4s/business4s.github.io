@@ -16,7 +16,7 @@ practices that cut time-to-value.
 
 ---
 
-## Why We Exists
+## Why We Exist
 
 Scala is powerful — but not always **business-relevant**.  
 Teams often struggle to show its impact because:
