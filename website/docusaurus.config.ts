@@ -53,6 +53,7 @@ const config: Config = {
                 src: 'img/Business4s.drawio.png',
             },
             items: [
+                { to: '/about', label: 'About Us', position: 'left' },
                 {
                     type: 'docSidebar',
                     sidebarId: 'mentorshipSidebar',
