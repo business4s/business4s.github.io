@@ -18,7 +18,7 @@ const FeatureList: FeatureItem[] = [
                 A library helping with taming the complexity of conditional logic.
             </>
         ),
-        link: 'https://business4s.github.io/decisions4s/'
+        link: 'https://business4s.org/decisions4s/'
     },
     {
         title: 'Workflows4s',
@@ -28,7 +28,17 @@ const FeatureList: FeatureItem[] = [
                 Prototype of a library for building long-running stateful workflows.
             </>
         ),
-        link: 'https://business4s.github.io/workflows4s/'
+        link: 'https://business4s.org/workflows4s/'
+    },
+    {
+        title: 'Forms4s',
+        Svg: require('@site/static/img/forms4s-logo.drawio.svg').default,
+        description: (
+            <>
+                Automatically generated input forms for rapid development
+            </>
+        ),
+        link: 'https://business4s.org/forms4s/'
     },
     {
         title: 'Domain-Oriented Scala Style Guide',
@@ -40,6 +50,16 @@ const FeatureList: FeatureItem[] = [
             </>
         ),
         link: 'https://github.com/business4s/domain-oriented-scala-style-guide'
+    },
+    {
+        title: 'Scala Adoption Tracker',
+        Svg: require('@site/static/img/scala-adoption-tracker-logo.drawio.svg').default,
+        description: (
+            <>
+                Collecting records of Scala usage in the wild.
+            </>
+        ),
+        link: 'https://business4s.org/scala-adoption-tracker/'
     },
     {
         title: 'Mentorship Program',
@@ -55,7 +75,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, Svg, description, link}: FeatureItem) {
     return (
-        <div className={clsx('col col--6')}>
+        <div className={clsx('col col--4')}>
             <a href={link} target="_blank" rel="noopener noreferrer" className="feature-link">
                 <div className="text--center padding-horiz--md">
                     {Svg && <div className="text--center">
