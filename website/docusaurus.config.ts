@@ -53,13 +53,14 @@ const config: Config = {
                 src: 'img/Business4s.drawio.png',
             },
             items: [
-                { to: '/about', label: 'About Us', position: 'left' },
+                { to: '/about', label: 'About', position: 'left' },
                 {
                     type: 'docSidebar',
                     sidebarId: 'mentorshipSidebar',
                     position: 'left',
-                    label: 'Mentorship Program',
+                    label: 'Mentorship',
                 },
+                { to: '/consulting', label: 'Consulting', position: 'left' },
                 {
                     href: 'https://medium.com/business4s-blog',
                     label: 'Blog',
