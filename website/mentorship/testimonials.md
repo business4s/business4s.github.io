@@ -40,4 +40,4 @@ A few words from people I’ve worked with through the program.
 
 ---
 
-Curious to work together? [Apply here](./signup) or [read more about the program](./).
+Curious to work together? [Apply here](./signup.mdx) or [read more about the program](./index.md).
