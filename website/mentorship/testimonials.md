@@ -1,5 +1,8 @@
 ---
 sidebar_position: 2
+sidebar_label: Testimonials
+title: Mentorship Testimonials
+description: What past mentees say about the Business4s Scala mentorship program.
 ---
 
 # Testimonials

@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+sidebar_label: Intro
+title: Scala Mentorship Program
+description: Free Scala mentorship for engineers — work on real challenges in code, career, and craft.
 ---
 
 # Intro
