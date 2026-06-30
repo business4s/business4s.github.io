@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 type FeatureItem = {
     title: string;
     Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
+    img?: string;
     description: JSX.Element;
     link: string;
 };
@@ -15,7 +16,7 @@ const FeatureList: FeatureItem[] = [
         Svg: require('@site/static/img/decisions4s-logo.drawio.svg').default,
         description: (
             <>
-                A library helping with taming the complexity of conditional logic.
+                A library taming the complexity of conditional logic.
             </>
         ),
         link: 'https://business4s.org/decisions4s/'
@@ -25,10 +26,20 @@ const FeatureList: FeatureItem[] = [
         Svg: require('@site/static/img/workflows4s-logo.drawio.svg').default,
         description: (
             <>
-                Prototype of a library for building long-running stateful workflows.
+                A library for building long-running stateful workflows.
             </>
         ),
         link: 'https://business4s.org/workflows4s/'
+    },
+    {
+        title: 'Chatops4s',
+        img: require('@site/static/img/chatops4s-logo.drawio.png').default,
+        description: (
+            <>
+                A high-level library for building interactive chat-based operations.
+            </>
+        ),
+        link: 'https://business4s.org/chatops4s/'
     },
     {
         title: 'Forms4s',
@@ -66,20 +77,23 @@ const FeatureList: FeatureItem[] = [
         Svg: require('@site/static/img/business4s-mentorship.drawio.svg').default,
         description: (
             <>
-                Helping people achieve their goals around Scala.
+                Helping Scala community members achieve their goals.
             </>
         ),
         link: 'https://business4s.org/mentorship'
     },
 ];
 
-function Feature({title, Svg, description, link}: FeatureItem) {
+function Feature({title, Svg, img, description, link}: FeatureItem) {
     return (
         <div className={clsx('col col--4')}>
             <a href={link} target="_blank" rel="noopener noreferrer" className="feature-link">
                 <div className="text--center padding-horiz--md">
                     {Svg && <div className="text--center">
                         <Svg className={styles.featureSvg} role="img"/>
+                    </div>}
+                    {img && <div className="text--center">
+                        <img className={styles.featureSvg} src={img} role="img" alt={title}/>
                     </div>}
                     <Heading as="h3">{title}</Heading>
                     <p>{description}</p>
@@ -93,7 +107,7 @@ export default function HomepageFeatures(): JSX.Element {
     return (
         <section className={styles.features}>
             <div className="container">
-                <div className="row">
+                <div className={clsx('row', styles.featureRow)}>
                     {FeatureList.map((props, idx) => (
                         <Feature key={idx} {...props} />
                     ))}
